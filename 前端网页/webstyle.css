@@ -1,0 +1,82 @@
+h1{
+    font-size: 7rem;
+    font-style: oblique;
+    color: chartreuse;
+    animation: twinkle 1.7s ease-in-out 0.5s 100 alternate ;/*通过调节透明度实现闪烁效果*/
+    text-align: center;
+} 
+@keyframes twinkle{
+    0%{opacity: 1;}
+    100%{opacity: 0.5;} 
+  }
+  /* 添加兼容性前缀 */
+  @-webkit-keyframes twinkle {/*兼容谷歌,下同*/
+      0% { opacity: 1; }/*opacity为透明度*/
+      100% { opacity: 0; }
+  }
+  @-moz-keyframes twinkle {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+  }
+  @-ms-keyframes twinkle {
+      0% {opacity: 1; } 
+      100% { opacity: 0;}
+  }
+  @-o-keyframes twinkle {
+      0% { opacity: 1; }
+      100% { opacity: 0; }
+  }
+aside>ol>li {
+    font-weight: bold;
+    font-size: 27px;
+    font-family: "微软雅黑";
+}
+h2 {
+    font-weight: bold;
+    font-style: inherit;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(57, 179, 209,0.7);
+    text-align: center;
+    height: 100%;
+    font-size: 57px;
+}
+article>p {/*注：文章样式“抄袭”自MDN*/
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+    font-size: 2rem;
+}
+p {
+    font-size: 27px;
+}
+abbr {
+    text-decoration: none;
+}
+.nav {
+width: 17rem;
+height: 27rem;
+left: 1rem;
+top: auto;
+position: fixed;
+z-index: 100;
+}
+section {
+    left: 27rem;
+    width: 67rem;
+    overflow: hidden;
+    position: absolute;
+}
+div {
+    display: inline-block;
+}
+pre {
+    background-color: rgb(216, 197, 197,0.57);
+  }
+a:link {
+    color: blue;
+}
+
+a:hover{
+    background-color: chartreuse;
+}
