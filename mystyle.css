@@ -1,0 +1,116 @@
+ul {/*去掉列表之前的圆点*/
+    list-style-type: none;
+    white-space: nowrap;
+    /*background-image:url(image/menubuttonbc.jpg);设置菜单按钮背景图*/
+}
+ul>li {
+    float: left;/*左对齐横向显示*/
+    margin-right: 57px;/*设置左边距*/
+    margin-top:0px ;
+    font-size: 27px;/*设置字体大小*/
+}
+.menu>ul>li>a {/*设置菜单列表子元素格式*/
+    color:skyblue;
+     font-family: Arial, Helvetica, sans-serif;
+     text-shadow: none;
+}
+
+.nav {
+    margin: 0 rih;
+    display: inline-block;/*合并区块水平对齐*/
+    overflow:hidden;/*设置固定高度和设定溢出参数防止缩放问题变形*/
+    width: 127rem;/*强制不换行方法，设置宽度和nowrap*/
+    height: auto;
+    white-space: nowrap;
+    background-color: rgb(202, 196, 185,0.27);/*rgb最后一个参数如果加上就是透明度设置，0-1范围*/
+    position: absolute;/*强制位于页面最上方*/
+}
+.myeducation>div {
+    display: none;
+    position:static;/*默认值，自动适应，菜鸟最爱，absolute父元素绝对定位，fixed浏览器绝对定位*/
+    background-color: #8d7f7f73;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+.myskill>div {
+    display: none;
+    position:static;/*默认值，自动适应，菜鸟最爱，absolute父元素绝对定位，fixed浏览器绝对定位*/
+    background-color:#8d7f7f73;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    }
+.lookforjob>div {
+display: none;
+position:static;/*默认值，自动适应，菜鸟最爱，absolute父元素绝对定位，fixed浏览器绝对定位*/
+background-color:#c2b1d881;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+/*接下来链接伪类选择器实现鼠标经过停留时不同的效果*/
+.myeducation>div :hover{/*技能下拉菜单按钮鼠标经过颜色*/
+    background-color: yellowgreen;
+}
+.myskill>div :hover{/*技能下拉菜单按钮鼠标经过颜色*/
+    background-color: rgb(145, 221, 145);
+}
+.lookforjob>div :hover{/*求职菜单按钮鼠标经过颜色*/
+    background-color: green;
+}
+
+a {
+    text-decoration: none;/*去掉下划线*/
+    font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif ;
+    font-weight: bold;/*字体加粗*/
+    text-align:center;
+    margin: auto;
+    display: block;
+    color: rgb(194, 77, 9);
+    text-shadow:-1px 0 white,0 1px white,1px 0 white,0 -1px white
+}
+.myeducation:hover div{/*需要为其父元素添加hover伪类选择器才能控制子元素，让隐藏的子菜单显示出来*/
+    display: block;
+}
+.myskill:hover div{/*需要为其父元素添加hover伪类选择器才能控制子元素，让隐藏的子菜单显示出来*/
+    display: block;
+}
+.lookforjob:hover div{/*需要为其父元素添加hover伪类选择器才能控制子元素，让隐藏的子菜单显示出来*/
+    display: block;
+}
+
+.menu>ul>li>a:hover {
+    background: rgba(216, 17, 17, 0.57);
+}
+.nav address {
+    margin-left: 17rem;
+}
+address>a{
+    text-shadow: none;
+    color: yellow;
+}
+.welcome/*实现欢迎文字移动*/
+{
+width: 17rem;
+background:skyblue;
+position:relative;
+animation:mymove 2s ease 1s 1 ;/*CSS绑定动画规则，animation: name duration timing-function delay iteration-count direction;，第一个绑定名字，第二个需要多少时间完成第三个规定速度曲线，第四个播放延迟第五个播放次数第六个是否反向播放*/
+-webkit-animation:mymove 2.7s ease 1s 1 ; /*Safari and Chrome*/
+animation-fill-mode: forwards; /*让动画停留在最后一帧 */
+}
+
+@keyframes mymove/*keyframes规则,，后面加上动画名*/
+{
+from {left:1270px;}
+to {left:0px;}
+}
+
+@-webkit-keyframes mymove /*Safari and Chrome*/
+{
+from {left:1270px;}
+to {left:0px;}
+}
+body {/*设置页面背景图*/
+    background-image: url(image/头像.jpg);
+    background-repeat: no-repeat;/*图像不随着页面滚动*/
+    background-attachment:fixed;/*图像不随着页面滚动*/
+    z-index:  -1;
+    background-size: cover;/*使得背景图充分覆盖*/
+}
+
+/*background-image:url(image/menubuttonbc.jpg);/*设置菜单按钮背景图*/
