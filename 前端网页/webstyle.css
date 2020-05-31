@@ -41,11 +41,11 @@ h2 {
     font-size: 57px;
 }
 article>p {/*注：文章样式“抄袭”自MDN*/
-        margin: 0;
-        padding: .3rem;
-        background-color: #eee;
-        font: 1rem 'Fira Sans', sans-serif;
-        font-size: 2rem;
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+    font-size: 2rem;
 }
 p {
     font-size: 27px;
@@ -71,9 +71,8 @@ div {
     display: inline-block;
 }
 pre {
-  background-color: rgb(216, 197, 197,0.57);
-  font-size: 17px;
-}
+    background-color: rgb(216, 197, 197,0.57);
+  }
 a:link {
     color: blue;
 }
