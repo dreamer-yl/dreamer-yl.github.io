@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,  user-scalable=0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0，  user-scalable=no" /><!--适配移动端-->
     <title>追梦人的主页</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -39,7 +39,23 @@
   </address>  
 </div>
 </section>
-<div></div>
+<div id="welcome2" >
+  <p hidden="hidden" id="p1"> 在吾青春年华</p>
+ <p hidden="hidden" id="p2">与君有幸相逢</p>
+  <p hidden="hidden"id="p3" >虽余才疏学浅</p>
+  <p hidden="hidden"id="p4" >但我依然期待</p>
+  <p hidden="hidden"id="p5" >与你携手共进</p>
+
+</div>
+<script>
+                $(document).ready(function(){
+    for (let i = 1; i <= 5; i++) {
+        str="#p"+i
+        timeout=i*1500+700
+    $(str).fadeIn(timeout);
+    }
+})
+</script>
 <!--<img src="image/头像.jpg" style="width: 270px; height: 210px;"/>-->
 <script src="main.js"></script>
 <audio src="backgroundmusic.mp3" autoplay></audio>
