@@ -16,14 +16,13 @@ ul>li {
 }
 
 .nav {
-    margin: 0 rih;
+    margin: 0 ;
     display: inline-block;/*合并区块水平对齐*/
     overflow:hidden;/*设置固定高度和设定溢出参数防止缩放问题变形*/
     width: 127rem;/*强制不换行方法，设置宽度和nowrap*/
-    height: auto;
     white-space: nowrap;
     background-color: rgb(202, 196, 185,0.27);/*rgb最后一个参数如果加上就是透明度设置，0-1范围*/
-    position: absolute;/*强制位于页面最上方*/
+
 }
 .myeducation>div {
     display: none;
@@ -89,8 +88,8 @@ address>a{
 width: 17rem;
 background:skyblue;
 position:relative;
-animation:mymove 2s ease 1s 1 ;/*CSS绑定动画规则，animation: name duration timing-function delay iteration-count direction;，第一个绑定名字，第二个需要多少时间完成第三个规定速度曲线，第四个播放延迟第五个播放次数第六个是否反向播放*/
--webkit-animation:mymove 2.7s ease 1s 1 ; /*Safari and Chrome*/
+animation:mymove 2s ease 0s 1 ;/*CSS绑定动画规则，animation: name duration timing-function delay iteration-count direction;，第一个绑定名字，第二个需要多少时间完成第三个规定速度曲线，第四个播放延迟第五个播放次数第六个是否反向播放*/
+-webkit-animation:mymove 2.7s ease 0s 1 ; /*Safari and Chrome*/
 animation-fill-mode: forwards; /*让动画停留在最后一帧 */
 }
 
@@ -113,4 +112,13 @@ body {/*设置页面背景图*/
     background-size: cover;/*使得背景图充分覆盖*/
 }
 
+#welcome2 {
+    color: crimson;
+    font-size: 57px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;/*元素居中方法*/
+    text-align: center;
+    text-shadow:-1px 0 white,0 1px white,1px 0 white,0 -1px white
+}
 /*background-image:url(image/menubuttonbc.jpg);/*设置菜单按钮背景图*/
